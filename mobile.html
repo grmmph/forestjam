@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Forest Jam</title>
+    <!-- Styles -->
+    <link href='http://fonts.googleapis.com/css?family=Glegoo|Sintony:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://grmmph.com/forestjam/font-awesome/css/font-awesome.min.css">
+    <link href="css/style.mobile.css" rel="stylesheet">
+
+    <script src="lib/fastclick.js" type="text/javascript"></script>
+  </head>
+
+  <body style='display:none;'>
+    <h1>Forest Jam</h1>
+    <div id='ismobile'></div>
+    <div id='login'>
+      <b>Join the Party!</b><br>
+        Enter the code shown on your PC screen.
+      <form id='loginform'>
+        <input class='text-input jamid' type='textarea'><span class='invalid icon-remove-sign icon-large green'></span>
+        <br>
+        <input type='submit' class="submit jamid" value='JAM!'>
+      </form>
+      <div class="login-message"></div>
+    </div>
+    <div class="cmp" id="header"></div>
+
+    <div class="cmp" id="content">
+      <div id='pad-holder'></div>
+      <div class='buttons-holder'>
+        <span class='nav-holder'>
+          <span class='nav prev '><i class="icon-chevron-left"></i></span>
+          <span class='instrument'><img src="img/thumb/keyboard.png"/></span>
+          <span class='nav next right'><i class="icon-chevron-right"></i></span>
+        </span>
+         <a class='btn right distortion icon-bolt '></a>
+        <div class='clear'></div>
+      </div>
+    </div>
+
+  <div id='when-kicked'>
+    You've been kicked out from the session. (Refresh the page or go home)
+  </div>
+
+  <!-- JS Libs -->
+  <script src="lib/jquery-1.9.1.js" type="text/javascript"></script>
+  <script src="/socket.io/socket.io.js" type="text/javascript"></script>
+
+  <!-- JS Game -->
+  <script src="forest.mobile.js"></script>
+  </body>
+</html>

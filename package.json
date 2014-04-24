@@ -1,0 +1,38 @@
+{
+  "name": "Forestjam",
+  "version": "0.0.1",
+  "description": "Forest Jam",
+  "keywords": [
+    "Rock start",
+    "Node.js",
+    "Music",
+    "Mobile"
+  ],
+  "author": {
+    "name": "Yonatan Wolowelsky",
+    "email": "grmmph@gmail.com",
+    "url":  "http://www.grmmph.com/"
+  },
+  "homepage": "http://www.grmmph.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://gitub.com/grmmph/forestjam"
+  },
+
+  "engines": {
+    "node": ">= 0.10.25",
+    "npm": ">= 1.3.24"
+  },
+
+  "dependencies": {
+    "express": "~3.0.0",
+      "ejs": "~0.7.1",
+      "socket.io": "~0.9.6"
+
+},
+  "devDependencies": {},
+  "bundleDependencies": [],
+
+  "private": true,
+  "main": "server.js"
+}
